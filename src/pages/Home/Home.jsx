@@ -3,7 +3,9 @@ import { useLoaderData } from "react-router-dom";
 import Navbar from "../Shared/Navbar/Navbar";
 import Banner from "./Banner";
 import Services from "./Services/Services";
-import Team from "./Team";
+import Culture from "./Culture";
+import FAQs from "./FAQs";
+import Footer from "./Footer";
 
 const Home = () => {
     const services = useLoaderData();
@@ -22,7 +24,9 @@ const Home = () => {
                 }
                
             </div>
-            <Team></Team>
+            <Culture></Culture>
+            <FAQs></FAQs>
+            <Footer></Footer>
         </div>
     );
 };

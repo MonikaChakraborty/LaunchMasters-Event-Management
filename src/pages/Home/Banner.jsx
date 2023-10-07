@@ -2,7 +2,7 @@
 
 const Banner = () => {
     return (
-        <div className="mt-16 rounded-lg w-full h-[700px] bg-[url('https://i.ibb.co/bFxn2JF/virtual-product-launch-event-examples.jpg')]">
+        <div className="mt-16 rounded-lg w-full h-[700px] bg-[url('https://i.ibb.co/bFxn2JF/virtual-product-launch-event-examples.jpg')] shadow-2xl">
 
            
             <div className="bg-gradient-to-r from-blue-500 via-yellow-700 ... text-blue-300 font-medium p-4 rounded-t-lg w-[550px]">
