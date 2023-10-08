@@ -4,11 +4,14 @@ import Home from "../pages/Home/Home";
 import Root from "../layouts/Root";
 import Dashboard from "../pages/Dashboard/Dashboard";
 import Resources from "../pages/Resources/Resources";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import Login from "../pages/Login/Login";
 
 const router = createBrowserRouter([
     {
         path: '/',
         element: <Root></Root>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: '/',
@@ -22,6 +25,10 @@ const router = createBrowserRouter([
             {
                 path: '/resources',
                 element: <Resources></Resources>
+            },
+            {
+                path: '/login',
+                element: <Login></Login>
             }
         ]
     }

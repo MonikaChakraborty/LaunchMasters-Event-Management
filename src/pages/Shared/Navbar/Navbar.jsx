@@ -90,7 +90,7 @@ const Navbar = () => {
             <img src={profilePic} />
           </div>
         </label>
-        <Link>
+        <Link to="/login">
           <button className="btn text-lg font-medium bg-slate-200">Login</button>
         </Link>
       </div>

@@ -1,9 +1,11 @@
 const Footer = () => {
   return (
     <div>
+      
         <footer className="footer p-10 bg-slate-300 text-base-content rounded-lg pl-16">
+        
 
-      <nav className="mb-4">
+      <nav className="mb-10 mt-20 ml-36">
         <header className=" text-xl normal-case text-slate-700 font-bold mb-2">Support</header>
         <a className="link link-hover text-base ">Help & uses</a>
         <hr className=" h-1 w-24 bg-gradient-to-r from-blue-600 to-yellow-700" />
@@ -16,7 +18,7 @@ const Footer = () => {
       </nav>
 
 
-      <nav className="mb-4">
+      <nav className="mb-10 mt-20">
         <header className=" text-xl normal-case text-slate-700 font-bold mb-2">Company</header>
         <a className="link link-hover text-base mb-1">Payment Method</a>
         <hr className=" h-1 w-24 bg-gradient-to-r from-blue-600 to-yellow-700" />
@@ -31,7 +33,7 @@ const Footer = () => {
       </nav>
 
 
-      <nav>
+      <nav className="mt-20">
         <header className="text-slate-700 font-bold text-xl normal-case mb-2">Social</header>
         <div className="grid grid-flow-col gap-4">
           <a className="text-blue-500 hover:underline">
