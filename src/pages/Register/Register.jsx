@@ -9,7 +9,7 @@ const Register = () => {
   const {createUser} = useAuth();
 
 
-  const handleRegister = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
 
@@ -31,18 +31,28 @@ const Register = () => {
 
       toast.error('The password is less than 6 characters')
 
-    } else if(!/[A-Z]/.test(password)){
+    } 
+    // else if(!/[A-Z]/.test(password)){
 
-      toast.error('The password do not have a capital letter')
+    //   toast.error('The password do not have a capital letter')
 
-    } else if(!/[!@#$%^&*]/.test(password)){
-      toast.error('The password do not have a special character')
-    }
+    // } else if(!/[!@#$%^&*]/.test(password)){
+    //   toast.error('The password do not have a special character')
+    // }
 
 
     // create a new user
+    createUser(email, password)
+    .then(res => console.log(res.user))
+    .catch(error => console.log(error))
    
   }
+
+
+
+  // login user
+
+
 
   return (
     <div>
@@ -59,7 +69,7 @@ const Register = () => {
             </p>
           </div>
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-            <form onSubmit={handleRegister} className="card-body">
+            <form onSubmit={handleSubmit} className="card-body">
 
               <div className="form-control">
                 <label className="label">

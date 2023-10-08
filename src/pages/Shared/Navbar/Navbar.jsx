@@ -1,7 +1,11 @@
 import { Link, NavLink } from "react-router-dom";
-import profilePic from "../../../assets/profile.png";
+// import profilePic from "../../../assets/profile.png";
+import useAuth from "../../../hooks/useAuth";
 
 const Navbar = () => {
+  const { user, logOut} = useAuth();
+
+
   const navLinks = (
     <>
       <li>
@@ -84,15 +88,39 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navLinks}</ul>
       </div>
+
+      {/* nav end */}
       <div className="navbar-end">
+
+        { 
+        user?.email ? <div className=" dropdown dropdown-end">
+
+        
         <label tabIndex={0} className="btn btn-ghost btn-circle avatar mr-2">
           <div className="w-10 rounded-full">
-            <img src={profilePic} />
+            {/* <img src={profilePic} /> */}
+            <img src={user.photoURL} alt="user.displayName" />
+
           </div>
         </label>
+
+        <ul tabIndex={0} className="menu menu-sm dropdown-content z-[1] p-2 shadow bg-base-200 rounded-box w-52 mt-3">
+          <li>
+            <button className="btn btn-sm btn-ghost">{user.displayName}</button>
+          </li>
+
+          <li>
+          <button onClick={logOut} className="btn btn-sm btn-ghost text-lg font-medium bg-slate-200">Logout</button>
+          </li>
+        </ul>
+
+        </div>
+        :
+
         <Link to="/login">
           <button className="btn text-lg font-medium bg-slate-200">Login</button>
         </Link>
+}
       </div>
     </div>
   );

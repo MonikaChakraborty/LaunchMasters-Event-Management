@@ -1,15 +1,48 @@
 import { Link } from "react-router-dom";
 import Navbar from "../Shared/Navbar/Navbar";
 import LoginMedia from "./LoginMedia";
+import useAuth from "../../hooks/useAuth";
+import toast from "react-hot-toast";
 
 const Login = () => {
 
+  const { signIn } = useAuth();
 
-//   const handleLogin = () => {
-//     signInWithPopup(auth, provider)
-//     .then()
-//     .catch()
-//   };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+
+
+    // get input field values
+
+    
+    const email = e.target.email.value;
+    const password = e.target.password.value;
+    
+
+    // console.log(name, email, password);
+
+    // validation
+    if(password.length < 6){
+
+      toast.error('The password is less than 6 characters')
+
+    } 
+    // else if(!/[A-Z]/.test(password)){
+
+    //   toast.error('The password do not have a capital letter')
+
+    // } else if(!/[!@#$%^&*]/.test(password)){
+    //   toast.error('The password do not have a special character')
+    // }
+
+
+    // create a new user
+    signIn(email, password)
+    .then(res => console.log(res.user))
+    .catch(error => console.log(error))
+   
+  }
 
 
 
@@ -29,7 +62,7 @@ const Login = () => {
             </p>
           </div>
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-            <form className="card-body">
+            <form onSubmit={handleSubmit} className="card-body">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
@@ -60,7 +93,7 @@ const Login = () => {
                 </label>
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary">Login</button>
+                <button type="submit" className="btn btn-primary">Login</button>
               </div>
              
             </form>
