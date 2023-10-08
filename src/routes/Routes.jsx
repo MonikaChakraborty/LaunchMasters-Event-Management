@@ -24,6 +24,7 @@ const router = createBrowserRouter([
             {
                 path: '/services/:name',
                 element: <PrivateRoute><Details></Details></PrivateRoute>,
+                loader: () => fetch('/services.json')
             },
             {
                 path: '/dashboard',

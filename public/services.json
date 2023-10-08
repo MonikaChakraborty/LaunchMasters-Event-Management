@@ -1,38 +1,45 @@
 [
     {
-        "name": "Premium Event Planning Package",
+        "name": "Event Planning Package",
         "image": "https://i.ibb.co/K2Crz56/cep-blog-nov-2016.png",
         "price": "$8,000 - $15,000",
-        "description": "Comprehensive planning and execution for your premium product launch event."
+        "description": "Comprehensive planning and execution for your premium product launch event.",
+        "longDescription" : "Our Complete Event Planning Package is designed for clients who demand excellence in every aspect of their product launch. From ideation to execution, our seasoned team of event planners ensures a seamless and unforgettable experience for your audience."
+
     },
     {
         "name": "Media Relations Management",
         "image": "https://i.ibb.co/QPrxDBL/ser2.jpg",
         "price": "$2,500 - $5,000",
-        "description": "Engaging with media outlets to ensure extensive coverage of your product launch."
+        "description": "Engaging with media outlets to ensure extensive coverage of your product launch.",
+        "longDescription" : "Elevate your product launch with our Media Relations Management service. We understand the power of media coverage in amplifying your brand message. Our seasoned PR professionals work tirelessly to secure press coverage, interviews, and media partnerships that resonate with your target audience."
     },
     {
-        "name": "VIP Guest Experience Enhancement",
+        "name": "Guest Experience Enhancement",
         "image": "https://i.ibb.co/TY3K1GT/ser3.jpg",
         "price": "$$1,500 - $3,000",
-        "description": "Specialized services to enhance the experience for high-profile attendees."
+        "description": "Specialized services to enhance the experience for high-profile attendees.",
+        "longDescription" : "Elevate your event with our VIP Guest Experience Enhancement service. We understand the importance of creating memorable moments for your high-profile attendees. From personalized concierge services to exclusive access, we ensure a premium experience for your VIP guests."
     },
     {
         "name": "Branding and Decor Expertise",
         "image": "https://i.ibb.co/PGCLtFy/ser4.jpg",
         "price": "$1,000 - $2,500",
-        "description": "Design and implementation of event branding aligned with your product."
+        "description": "Design and implementation of event branding aligned with your product.",
+        "longDescription" : "Transform your event into a brand showcase with our Branding and Decor Expertise service. We specialize in creating immersive environments that align with your product and brand identity. From custom signage to thematic decor, we ensure that every element reflects your brand story."
     },
     {
         "name": "Cutting-Edge Tech Integration",
         "image": "https://i.ibb.co/3frXWKx/ser5.jpg",
         "price": "$3,000 - $6,000",
-        "description": "Incorporating advanced audio-visual elements for impactful presentations and demos."
+        "description": "Incorporating advanced audio-visual elements for impactful presentations and demos.",
+        "longDescription" : "Ensure a technologically advanced event with our Cutting-Edge Technology Integration service. We specialize in incorporating the latest audio-visual elements to create impactful and memorable presentations. From interactive displays to augmented reality experiences, we bring innovation to your product launch."
     },
     {
         "name": "Post-Event Analysis and Insights",
         "image": "https://i.ibb.co/pX0WyFs/ser6.jpg",
         "price": "$1,200 - $2,500",
-        "description": "Thorough post-event evaluations to measure the success of your product launch."
+        "description": "Thorough post-event evaluations to measure the success of your product launch.",
+        "longDescription" : "Gain valuable insights with our Post-Event Analysis and Insights service. We go beyond the event day to evaluate the success of your product launch comprehensively. From attendee feedback to performance metrics, we provide you with actionable insights to inform future events."
     }
 ]

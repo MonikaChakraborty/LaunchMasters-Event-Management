@@ -10,7 +10,7 @@ const Login = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
-  console.log('location in the login', location);
+  // console.log('location in the login', location);
 
 
 
@@ -43,12 +43,18 @@ const Login = () => {
 
     // create a new user
     signIn(email, password)
-    .then(res => console.log(res.user))
+    .then(res => {
+      toast.success('Login Successful');
+
+    navigate('/')
+    })
 
     // navigate user after login
     navigate(location?.state ? location.state : '/')
 
-    .catch(error => console.log(error))
+    .catch(error => {
+      toast.error(error.message);
+    })
    
   }
 
