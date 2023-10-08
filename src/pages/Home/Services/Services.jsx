@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Services = ({ services }) => {
   const { name, image, price,  description } = services;
   return (
@@ -14,7 +16,9 @@ const Services = ({ services }) => {
 
         <p className="text-gray-800 text-lg font-medium">Price: {price}</p>
         <div className="card-actions justify-end">
-          <button className="btn normal-case bg-blue-700 text-white text-lg hover:bg-blue-800">View details</button>
+          <Link to={`/services/${name}`}>
+            <button className="btn normal-case bg-blue-700 text-white text-lg hover:bg-blue-800">View details</button>
+          </Link>
         </div>
       </div>
     </div>

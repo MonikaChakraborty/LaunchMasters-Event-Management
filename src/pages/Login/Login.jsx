@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../Shared/Navbar/Navbar";
 import LoginMedia from "./LoginMedia";
 import useAuth from "../../hooks/useAuth";
@@ -7,6 +7,12 @@ import toast from "react-hot-toast";
 const Login = () => {
 
   const { signIn } = useAuth();
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  console.log('location in the login', location);
+
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -14,8 +20,6 @@ const Login = () => {
 
 
     // get input field values
-
-    
     const email = e.target.email.value;
     const password = e.target.password.value;
     
@@ -40,6 +44,10 @@ const Login = () => {
     // create a new user
     signIn(email, password)
     .then(res => console.log(res.user))
+
+    // navigate user after login
+    navigate(location?.state ? location.state : '/')
+
     .catch(error => console.log(error))
    
   }
