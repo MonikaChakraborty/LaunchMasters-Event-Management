@@ -6,10 +6,18 @@ import Services from "./Services/Services";
 import Culture from "./Culture";
 import FAQs from "./FAQs";
 import Footer from "./Footer";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
 
 const Home = () => {
     const services = useLoaderData();
     
+    useEffect(() => {
+        AOS.init();
+      }, []);
+      
     // console.log(services);
     return (
         <div className="">

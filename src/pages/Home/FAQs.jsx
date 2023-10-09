@@ -7,10 +7,10 @@ const FAQs = () => {
       </h1>
       {/* description */}
       <div className="flex flex-col justify-center items-center mb-8">
-        <h2 className="text-2xl font-semibold mb-2">
+        <h2 className=" lg:text-2xl text-center font-semibold mb-2">
           Have Questions? We Have Answers. Explore Our FAQs Below.
         </h2>
-        <p className="w-[750px] text-gray-500 text-lg font-medium text-center">
+        <p className="lg:w-[750px] w-[300px] text-gray-500 lg:text-lg text-sm font-medium text-center">
           Uncover insights about <span className="text-blue-700 font-semibold">Launch<span className="text-yellow-700">Masters</span> </span> and how we excel in orchestrating
           successful product launch events. From planning to analysis, we're
           here to guide you every step of the way.
@@ -21,10 +21,10 @@ const FAQs = () => {
       <div className="space-y-4">
         <div className="collapse collapse-arrow bg-slate-300">
           <input type="radio" name="my-accordion-2" checked="checked" />
-          <div className="collapse-title text-xl  font-medium">
+          <div className="collapse-title text-lg lg:text-xl  font-medium">
             How does LaunchMasters ensure the success of product launch events?
           </div>
-          <div className="collapse-content text-bg text-gray-700">
+          <div className="collapse-content text-sm lg:text-bg text-gray-700">
             <p>
               LaunchMasters employs a comprehensive approach, offering services
               such as event planning, media management, branding, and post-event
@@ -36,10 +36,10 @@ const FAQs = () => {
 
         <div className="collapse collapse-arrow bg-slate-300">
           <input type="radio" name="my-accordion-2" />
-          <div className="collapse-title text-xl  font-medium">
+          <div className="collapse-title text-lg lg:text-xl  font-medium">
             What types of events does LaunchMasters specialize in?
           </div>
-          <div className="collapse-content text-bg text-gray-700">
+          <div className="collapse-content text-sm lg:text-bg text-gray-700">
             <p>
               LaunchMasters specializes in corporate events, specifically
               focusing on product launches. Our expertise extends to planning
@@ -51,11 +51,11 @@ const FAQs = () => {
 
         <div className="collapse collapse-arrow bg-slate-300">
           <input type="radio" name="my-accordion-2" />
-          <div className="collapse-title text-xl font-medium">
+          <div className="collapse-title text-lg lg:text-xl font-medium">
             Can LaunchMasters handle both small and large-scale product launch
             events?
           </div>
-          <div className="collapse-content text-bg text-gray-700">
+          <div className="collapse-content text-sm lg:text-bg text-gray-700">
             <p>
               Absolutely! LaunchMasters is equipped to manage events of various
               scales. Whether it's an intimate product unveiling or a grand
@@ -67,10 +67,10 @@ const FAQs = () => {
 
         <div className="collapse collapse-arrow bg-slate-300">
           <input type="radio" name="my-accordion-2" />
-          <div className="collapse-title text-xl font-medium">
+          <div className="collapse-title text-lg lg:text-xl font-medium">
             How do I get started with LaunchMasters for my product launch event?
           </div>
-          <div className="collapse-content">
+          <div className="collapse-content text-sm lg:text-bg text-gray-700">
             <p>
               Getting started is easy! Simply visit our "Services" page to
               explore the range of offerings. Once you've identified the

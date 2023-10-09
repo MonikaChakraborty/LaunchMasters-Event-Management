@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Services = ({ services }) => {
   const { name, image, price,  description } = services;
   return (
-    <div className="card bg-base-100 shadow-xl">
+    <div className="card bg-base-100 shadow-xl" data-aos="fade-up" data-aos-duration="800">
       <figure>
         <img className="w-[800px] h-[350px]"
           src={image}

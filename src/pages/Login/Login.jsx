@@ -27,16 +27,18 @@ const Login = () => {
     // console.log(name, email, password);
 
     // validation
-    if(password.length < 6){
+    // if(password.length < 6){
 
-      toast.error('The password is less than 6 characters')
+    //   toast.error('The password is less than 6 characters')
+    // } 
 
-    } 
     // else if(!/[A-Z]/.test(password)){
 
     //   toast.error('The password do not have a capital letter')
 
-    // } else if(!/[!@#$%^&*]/.test(password)){
+    // } 
+    
+    // else if(!/[!@#$%^&*]/.test(password)){
     //   toast.error('The password do not have a special character')
     // }
 
@@ -46,19 +48,20 @@ const Login = () => {
     .then(res => {
       toast.success('Login Successful');
 
-    navigate('/')
-    })
-
+    // navigate('/')
     // navigate user after login
     navigate(location?.state ? location.state : '/')
+    })
+
+    
 
     .catch(error => {
-      toast.error(error.message);
+     
+        toast.error('email or password does not match');
+      // toast.error(error.message);
     })
    
   }
-
-
 
   return (
     <div>

@@ -60,7 +60,7 @@ const Details = () => {
 
             <div className="flex gap-2 mt-2">
               <BsBarChartFill className="h-5 text-lime-800"></BsBarChartFill>
-              <h1>IPost-event insights for continuous success</h1>
+              <h1>Post-event insights for continuous success</h1>
             </div>
 
             <div className="flex gap-2 mt-2">

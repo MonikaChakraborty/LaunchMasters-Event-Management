@@ -2,14 +2,14 @@
 
 const Banner = () => {
     return (
-        <div className="mt-16 rounded-lg w-full h-[700px] bg-[url('https://i.ibb.co/bFxn2JF/virtual-product-launch-event-examples.jpg')] shadow-2xl">
+        <div className="mt-16 rounded-lg w-full md:h-[200px] lg:h-[700px] bg-[url('https://i.ibb.co/bFxn2JF/virtual-product-launch-event-examples.jpg')] shadow-xl">
 
            
-            <div className="bg-gradient-to-r from-blue-500 via-yellow-700 ... text-blue-300 font-medium p-4 rounded-t-lg w-[550px]">
+            <div className="bg-gradient-to-r from-blue-500 via-yellow-700 ... text-blue-300 font-medium p-4 rounded-t-lg w-[100px] lg:w-[550px]">
             <h1 className="text-3xl ml-12">The future is here</h1>
             </div>
 
-            <div className="relative left-[1000px] top-20">
+            <div className="relative lg:left-[1000px] top-20">
                 {/* <h1 className=" text-red-500 text-5xl">icon</h1>
                 <AiOutlineCalendar className='text-white w-5 h-5'></AiOutlineCalendar>
                 icon1 */}

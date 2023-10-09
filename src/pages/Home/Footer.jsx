@@ -2,23 +2,23 @@ const Footer = () => {
   return (
     <div>
       
-        <footer className="footer p-10 bg-slate-300 text-base-content rounded-lg pl-16">
+      <footer className="footer p-10 bg-slate-300 text-base-content rounded-lg lg:pl-16 grid lg:grid-cols-3">
         
 
-      <nav className="mb-10 mt-20 ml-36">
+      <div className="mb-10 mt-20 ml-36">
         <header className=" text-xl normal-case text-slate-700 font-bold mb-2">Support</header>
-        <a className="link link-hover text-base ">Help & uses</a>
+        <p className="text-base ">Help & uses</p>
         <hr className=" h-1 w-24 bg-gradient-to-r from-blue-600 to-yellow-700" />
-        <a className="link link-hover text-base">Support</a>
+        <p className=" text-base">Support</p>
         <hr className=" h-1 w-24 bg-gradient-to-r from-blue-600 to-yellow-700" />
-        <a className="link link-hover text-base">Forum</a>
+        <p className=" text-base">Forum</p>
         <hr className=" h-1 w-24 bg-gradient-to-r from-blue-600 to-yellow-700" />
-        <a className="link link-hover text-base ">Developers</a>
+        <p className="text-base ">Developers</p>
         
-      </nav>
+      </div>
 
 
-      <nav className="mb-10 mt-20">
+      <div className="mb-10 mt-20">
         <header className=" text-xl normal-case text-slate-700 font-bold mb-2">Company</header>
         <a className="link link-hover text-base mb-1">Payment Method</a>
         <hr className=" h-1 w-24 bg-gradient-to-r from-blue-600 to-yellow-700" />
@@ -30,10 +30,10 @@ const Footer = () => {
         <hr className=" h-1 w-24 bg-gradient-to-r from-blue-600 to-yellow-700" />
 
         <a className="link link-hover text-base mb-1">Privacy Policy</a>
-      </nav>
+      </div>
 
 
-      <nav className="mt-20">
+      <div className="mt-20">
         <header className="text-slate-700 font-bold text-xl normal-case mb-2">Social</header>
         <div className="grid grid-flow-col gap-4">
           <a className="text-blue-500 hover:underline">
@@ -70,7 +70,7 @@ const Footer = () => {
             </svg>
           </a>
         </div>
-      </nav>
+      </div>
     </footer>
     </div>
   );
