@@ -23,7 +23,7 @@ const Details = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <div className="mt-6">
+      <div className="mt-6 max-w-screen-xl mx-auto">
         <div className="flex">
           <div className="mr-5 ml-6">
             <h1 className="bg-gradient-to-r from-blue-500 via-yellow-700 to-blue-500 text-center py-3 px-2 rounded text-white font-medium text-xl">

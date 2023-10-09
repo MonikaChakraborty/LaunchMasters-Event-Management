@@ -7,14 +7,14 @@ const FAQs = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 800, // Set the duration of animations (in milliseconds)
-      offset: 100, // Set the offset (in pixels) to trigger animations sooner or later
-      easing: 'ease-in-out', // Set the easing function for animations
+      duration: 800,
+      offset: 100, 
+      easing: 'ease-in-out'
     });
   }, []);
   return (
-    <div className="mb-24">
-      <h1 className="text-4xl font-semibold text-center mb-6 text-blue-700" data-aos="fade-up">
+    <div className="mb-16 lg:mb-24 max-w-screen-xl mx-auto">
+      <h1 className="text-3xl lg:text-4xl font-semibold text-center mb-6 text-blue-700" data-aos="fade-up">
         FAQ's
       </h1>
       {/* description */}

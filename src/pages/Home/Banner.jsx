@@ -13,9 +13,9 @@ const Banner = () => {
         });
       }, []);
     return (
-        <div className="mt-16 rounded-lg lg:w-full bg-cover h-[90vh] bg-[url('https://i.ibb.co/bFxn2JF/virtual-product-launch-event-examples.jpg')] shadow-xl" data-aos="fade-up">
+        <div className="mt-8 lg:w-full bg-cover h-[90vh] bg-[url('https://i.ibb.co/bFxn2JF/virtual-product-launch-event-examples.jpg')] shadow-xl" data-aos="fade-up">
            
-            <div className="bg-gradient-to-r from-blue-500 via-yellow-700 ... text-blue-300 font-medium p-4 rounded-t-lg w-[100px] lg:w-[550px]" data-aos="fade-up">
+            <div className="bg-gradient-to-r from-blue-500 via-yellow-700 ... text-blue-300 font-medium p-4 w-[100px] lg:w-[550px]" data-aos="fade-up">
             <h1 className="text-xl lg:text-3xl lg:ml-12">The future is here</h1>
             </div>
 

@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 const Footer = () => {
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 200,
       offset: 100,
       easing: 'ease-in-out'
     });

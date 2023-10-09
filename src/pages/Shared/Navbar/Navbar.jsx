@@ -116,11 +116,11 @@ const Navbar = () => {
 
         <ul tabIndex={0} className="menu menu-sm dropdown-content z-[1] p-2 shadow bg-base-200 rounded-box w-52 mt-3">
           <li>
-            <button className="btn btn-sm btn-ghost">{user.displayName}</button>
+            <button className="btn btn-sm btn-ghost text-lg bg-slate-200 normal-case">{user.displayName}</button>
           </li>
 
           <li>
-          <button onClick={logOut} className="btn btn-sm btn-ghost text-lg font-medium bg-slate-200">Logout</button>
+          <button onClick={logOut} className="btn btn-sm btn-ghost text-lg bg-slate-200 normal-case">Logout</button>
           </li>
         </ul>
 
