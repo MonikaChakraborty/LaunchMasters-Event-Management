@@ -1,11 +1,20 @@
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import image1 from "../../assets/cul1.jpeg";
 import image2 from "../../assets/cul2.jpg";
 // import image3 from '../../assets/cul3.jpg'
 import image3 from "../../assets/cul4.jpg";
 const Culture = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      offset: 200
+    });
+  }, []);
   return (
     <div className="mt-28 mb-24 flex flex-col lg:flex-row shadow-lg pl-5">
-      <div className="lg:w-2/5 lg:mr-32">
+      <div className="lg:w-2/5 lg:mr-32" data-aos="fade-up">
         <h1 className="text-3xl g:text-4xl font-semibold text-center mb-12 text-blue-700">
           Our Office Culture
         </h1>

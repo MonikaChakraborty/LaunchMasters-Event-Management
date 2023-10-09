@@ -28,11 +28,11 @@ const router = createBrowserRouter([
             },
             {
                 path: '/partners',
-                element: <Partners></Partners>
+                element: <PrivateRoute><Partners></Partners></PrivateRoute>
             },
             {
                 path: '/subscribe',
-                element: <Subscribe></Subscribe>
+                element: <PrivateRoute><Subscribe></Subscribe></PrivateRoute>
             },
             {
                 path: '/login',

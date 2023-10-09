@@ -1,8 +1,20 @@
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 /* eslint-disable react/no-unescaped-entities */
 const FAQs = () => {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 800, // Set the duration of animations (in milliseconds)
+      offset: 100, // Set the offset (in pixels) to trigger animations sooner or later
+      easing: 'ease-in-out', // Set the easing function for animations
+    });
+  }, []);
   return (
     <div className="mb-24">
-      <h1 className="text-4xl font-semibold text-center mb-6 text-blue-700">
+      <h1 className="text-4xl font-semibold text-center mb-6 text-blue-700" data-aos="fade-up">
         FAQ's
       </h1>
       {/* description */}
@@ -19,7 +31,7 @@ const FAQs = () => {
 
       {/* QA */}
       <div className="space-y-4">
-        <div className="collapse collapse-arrow bg-slate-300">
+        <div className="collapse collapse-arrow bg-slate-300" data-aos="fade-up">
           <input type="radio" name="my-accordion-2" checked="checked" />
           <div className="collapse-title text-lg lg:text-xl  font-medium">
             How does LaunchMasters ensure the success of product launch events?
@@ -34,7 +46,7 @@ const FAQs = () => {
           </div>
         </div>
 
-        <div className="collapse collapse-arrow bg-slate-300">
+        <div className="collapse collapse-arrow bg-slate-300" data-aos="fade-up">
           <input type="radio" name="my-accordion-2" />
           <div className="collapse-title text-lg lg:text-xl  font-medium">
             What types of events does LaunchMasters specialize in?
@@ -49,7 +61,7 @@ const FAQs = () => {
           </div>
         </div>
 
-        <div className="collapse collapse-arrow bg-slate-300">
+        <div className="collapse collapse-arrow bg-slate-300" data-aos="fade-up">
           <input type="radio" name="my-accordion-2" />
           <div className="collapse-title text-lg lg:text-xl font-medium">
             Can LaunchMasters handle both small and large-scale product launch
@@ -65,7 +77,7 @@ const FAQs = () => {
           </div>
         </div>
 
-        <div className="collapse collapse-arrow bg-slate-300">
+        <div className="collapse collapse-arrow bg-slate-300" data-aos="fade-up">
           <input type="radio" name="my-accordion-2" />
           <div className="collapse-title text-lg lg:text-xl font-medium">
             How do I get started with LaunchMasters for my product launch event?

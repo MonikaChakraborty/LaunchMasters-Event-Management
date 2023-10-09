@@ -1,8 +1,18 @@
 import { Link, NavLink } from "react-router-dom";
 // import profilePic from "../../../assets/profile.png";
 import useAuth from "../../../hooks/useAuth";
+import { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Navbar = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      offset: 100,
+      easing: 'ease-in-out'
+    });
+  }, []);
   const { user, logOut} = useAuth();
 
 
@@ -81,7 +91,7 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <h3 className="normal-case text-2xl lg:text-4xl font-semibold text-blue-700">
+        <h3 className="normal-case text-2xl lg:text-4xl font-semibold text-blue-700" data-aos="fade-right">
           Launch<span className="text-yellow-700">Masters</span>
         </h3>
       </div>

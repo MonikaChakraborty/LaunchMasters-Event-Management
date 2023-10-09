@@ -18,6 +18,7 @@ const Home = () => {
         AOS.init();
       }, []);
       
+      
     // console.log(services);
     return (
         <div className="">
