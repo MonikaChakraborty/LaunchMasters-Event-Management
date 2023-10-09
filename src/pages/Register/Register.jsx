@@ -84,14 +84,19 @@ const Register = () => {
     <div>
       <Navbar></Navbar>
 
-      <div className="hero p-2 bg-base-200 mt-8">
+      <div className="hero lg:p-2 bg-base-200 mt-8">
         <div className="hero-content flex-col lg:flex-row-reverse">
           <div className="text-center lg:text-left ml-8">
-            <h1 className="text-5xl font-bold">Register now!</h1>
+            <h1 className="text-3xl lg:text-5xl font-bold">Register now!</h1>
             <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+              Excited to get started? Register now to create your account and
+              unlock a world of possibilities. Enjoy personalized experiences,
+              exclusive features, and stay connected with our community. If you
+              already have an account, you can{" "}
+              <Link className="text-blue-700 font-medium" to="/login">
+                log in here
+              </Link>
+              .
             </p>
           </div>
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">

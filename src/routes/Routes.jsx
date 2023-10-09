@@ -2,13 +2,13 @@
 import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/Home/Home";
 import Root from "../layouts/Root";
-import Dashboard from "../pages/Dashboard/Dashboard";
-import Resources from "../pages/Resources/Resources";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import Details from "../pages/Details/Details";
 import PrivateRoute from "./PrivateRoute";
+import Partners from "../pages/Partners/Partners";
+import Subscribe from "../pages/Subscribe/Subscribe";
 
 const router = createBrowserRouter([
     {
@@ -27,12 +27,12 @@ const router = createBrowserRouter([
                 loader: () => fetch('/services.json')
             },
             {
-                path: '/dashboard',
-                element: <Dashboard></Dashboard>
+                path: '/partners',
+                element: <Partners></Partners>
             },
             {
-                path: '/resources',
-                element: <Resources></Resources>
+                path: '/subscribe',
+                element: <Subscribe></Subscribe>
             },
             {
                 path: '/login',

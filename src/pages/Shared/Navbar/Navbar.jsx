@@ -25,7 +25,7 @@ const Navbar = () => {
 
       <li>
         <NavLink
-          to="/dashboard"
+          to="/partners"
           className={({ isActive, isPending }) =>
             isPending
               ? "pending"
@@ -34,13 +34,13 @@ const Navbar = () => {
               : "text-lg font-medium"
           }
         >
-          Dashboard
+          Partners
         </NavLink>
       </li>
 
       <li>
         <NavLink
-          to="/resources"
+          to="/subscribe"
           className={({ isActive, isPending }) =>
             isPending
               ? "pending"
@@ -49,7 +49,7 @@ const Navbar = () => {
               : "text-lg font-medium"
           }
         >
-          Resources
+          Subscribe
         </NavLink>
       </li>
     </>
@@ -81,7 +81,7 @@ const Navbar = () => {
             {navLinks}
           </ul>
         </div>
-        <h3 className="normal-case text-4xl font-semibold text-blue-700">
+        <h3 className="normal-case text-2xl lg:text-4xl font-semibold text-blue-700">
           Launch<span className="text-yellow-700">Masters</span>
         </h3>
       </div>
