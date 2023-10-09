@@ -31,7 +31,7 @@ description: In the function 'sayHi', there is a parameter 'name', but no argume
 - 5
 C: 3
 
-description: In the code you provided, the callback function checks if the current element is truthy. The first element of the nums array is 0, which is a falsy value. The remaining elements truthy values. So that, at the end of the loop, the value of count will be 3, 
+description: In the code you provided, the callback function checks if the current element is truthy. The first element of the nums array is 0, which is a falsy value. The remaining elements truthy values. So that, at the end of the loop, the value of count will be 3. 
 
 
 
